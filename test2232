@@ -155,7 +155,7 @@ Uis.InputBegan:Connect(function(Key)
 end)
 Uis.InputEnded:Connect(function(Key)
     if not (Uis:GetFocusedTextBox()) then 
-        if Key.UserInputType == Enum.UserInputType.MouseButton2 then 
+        if Key.UserInputType == Enum.UserInputType.MouseButton1 then 
             if AimlockTarget ~= nil then AimlockTarget = nil end
             if MousePressed ~= false then 
                 MousePressed = false 
